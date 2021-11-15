@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
-
-    <div class="add-book">
+  </head>
+  <body>
+    <form onsubmit="return false">
+      <div class="add-book">
         <div id="form">
+          <button id="new-book">New Book</button>
 
-    <button id="new-book">New Book</button>
-    
+          <label for="author"
+            >Author
+            <input id="author" placeholder="" required />
+          </label>
 
-            <label for="author">Author
-                <input id="author" placeholder="">
-                
-            </label>
+          <label for="title"
+            >Title
+            <input id="title" required />
+          </label>
 
-            <label for="title">Title
-                <input id="title">
-            </label>
-
-            <label for="pages">Pages
-                <input id="pages">
-
-            </label>
-            <label>Read Book:</label>
-            <button id="read">True</button>
-            <button id="submit">Submit Book</button>
+          <label for="pages"
+            >Pages
+            <input id="pages" required />
+          </label>
+          <label>Read Book:</label>
+          <button id="read">True</button>
+          <button type="submit" id="submit">Submit Book</button>
         </div>
-    </div>
-    <div id="books"></div>
+      </div>
+    </form>
 
-</body>
+    <div id="books"></div>
+  </body>
 </html>
